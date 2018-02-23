@@ -1,0 +1,33 @@
+.ItemPicture {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto -6px;
+    position: relative;
+    top: -20px;
+    background-color: #fff;
+    justify-content: center;
+}
+.ItemPicture img {
+    max-height: 246px;
+    max-width: 246px;
+}
+
+
+.badge {
+    width: 70px;
+    color: #fff;
+    justify-content: center;
+    font-size: 13px;
+}
+.badge-holder {
+    left: 0;
+    right: 0;
+    top: 115px;
+    position: absolute;
+}
+.badge__sale {
+    background-color: #ED1111;
+}
+.badge__new {
+    background-color: #000;
+}

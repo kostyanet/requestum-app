@@ -1,0 +1,16 @@
+.ButtonGroup {
+    padding: 0 10px;
+}
+
+.button__add {
+    color: rgb( 237, 17, 17 );
+    background-color: #fff;
+    font-size: 13px;
+    text-shadow: 1px 0 0 rgba( 237, 17, 17, 0.4 );
+}
+
+.button__view {
+    background-color: #D9D9D9;
+    color: rgb(153, 158, 159);
+    font-size: 12px;
+}

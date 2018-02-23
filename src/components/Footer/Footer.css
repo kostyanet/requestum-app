@@ -1,0 +1,56 @@
+.Footer {
+    margin: 15px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.offer,
+.contacts {
+    width: 370px;
+    height: 310px;
+    margin: 15px;
+    padding: 18px 26px;
+}
+
+.offer__title {
+    color: rgb( 51, 51, 51 );
+    text-transform: uppercase;
+    font: 400 20px 'Raleway', sans-serif;
+}
+
+.offer__list-item {
+    margin-bottom: 10px;
+}
+
+.offer__list-marker {
+    display: inline-block;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0 4px 5px;
+    border-color: transparent transparent transparent #ED1111;
+}
+
+.contacts__list-item {
+    margin-bottom: 5px;
+}
+
+.icon-holder {
+    width: 40px;
+}
+
+.icon-holder.fa {
+    color: #ED1111;
+}
+
+.email-container {
+    padding-top: 15px;
+    line-height: 2;
+    margin-bottom: 5px;
+}
+
+.anchor__as-text {
+    color: inherit;
+    text-decoration: none;
+}

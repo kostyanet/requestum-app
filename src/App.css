@@ -1,0 +1,26 @@
+.App {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1280px;
+    min-height: 100vh;
+    background-color: #FFF;
+}
+
+.main {
+    padding-top: 40px;
+}
+
+
+.LoadControl {
+    text-align: center;
+}
+
+.button__load {
+    margin: 40px auto;
+    color: rgb( 237, 17, 17 );
+    background-color: #FFF;
+    font: 400 13px 'Myriad Pro', sans-serif;
+}
+.button__load:disabled {
+    color: rgb( 229, 229, 229 );
+}
