@@ -37,6 +37,7 @@
 }
 
 .icon-holder {
+    flex: none;
     width: 40px;
 }
 

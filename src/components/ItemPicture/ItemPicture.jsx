@@ -1,15 +1,14 @@
 import React from 'react';
-
 import './ItemPicture.css';
 
 
-const ItemPicture = () => (
+const ItemPicture = (props) => (
     <figure className="flex-row bordered ItemPicture">
-        <img src="http://via.placeholder.com/200x200" alt="" />
+        <img src={props.img} alt="props.title" />
 
         <div className="flex-row badge-holder">
-            <div className="flex-row badge badge__sale">Sale</div>
-            <div className="flex-row badge badge__new">New</div>
+            { props.discountCost ? <div className="flex-row badge badge__sale">Sale</div> : <div/> }
+            { props.isNew ? <div className="flex-row badge badge__new">New</div> : <div/> }
         </div>
     </figure>
 );

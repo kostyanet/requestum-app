@@ -1,26 +1,28 @@
 import React    from 'react';
+import {inject, observer} from 'mobx-react';
 
 import ItemView from '../ItemView/ItemView';
 import './Inventory.css';
 
 
-const Inventory = () => (
-    <ul className="flex-row Inventory">
-            <ItemView />
-    </ul>
-    );
+class Inventory extends React.Component {
+    componentWillMount() {
+        this.props.store.getList();
+    }
 
 
-export default Inventory;
+    render() {
+        return (
+            <ul className="flex-row Inventory">
+                {this.props.store.list.map(item =>
+                    <ItemView item={item} key={item.id} />
+                )}
+            </ul>
+        );
+    }
+}
 
 
-// {/*{store.items.map((item, index) =>*/}
-{/*<ItemView*/}
-    // index={index}
-    // isActive={index === store.activeIndex}
-    // item={item}
-    // key={item.id}
-    // removeItem={store.removeItem}
-    // setItemActive={store.setItemActive}
-// />
-// )}
+export default inject('store')(observer(Inventory));
+
+
