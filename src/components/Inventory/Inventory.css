@@ -1,4 +1,6 @@
 .Inventory {
+    height: 465px;
+    overflow-y:scroll;
     flex-wrap: wrap;
     justify-content: space-around;
 }

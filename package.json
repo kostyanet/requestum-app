@@ -1,7 +1,7 @@
 {
-  "name": "rq",
+  "name": "rq-app",
   "version": "0.1.0",
-  "private": true,
+  "author": "Kostya Netrebenko <net.kostya@gmail.com>",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "mobx": "^3.5.1",

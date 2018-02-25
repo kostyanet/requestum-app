@@ -1,7 +1,7 @@
 .ItemView {
     width: 270px;
     height: 425px;
-    margin: 15px;
+    margin: 15px 15px 30px 15px;
 }
 
 .ItemView__main {
@@ -17,7 +17,7 @@
     width: 100%;
     background-color: #fff;
     opacity: 0;
-    animation: fadeIn 1s forwards;
+    animation: fadeIn 1.2s forwards;
 }
 .ItemView__border:hover {
     box-shadow: 0 3px 8px 1px #bbb;
@@ -72,11 +72,8 @@
 
 @keyframes fadeIn {
     0% {
-        transform: scaleY(0);
-    }
-    30% {
         opacity: 0;
-        transform: scaleY(0.3);
+        transform: scaleY(0.75);
     }
     100%   {
         opacity: 1;

@@ -1,8 +1,10 @@
-class HTTPService {
-    BASE_URL = 'http://localhost:8080/';
+import AppSettings from '../common/app.settings';
 
-    get(query) {
-        return fetch(this.BASE_URL + query)
+
+export default class HTTPService {
+
+    static get(query) {
+        return fetch(AppSettings.BASE_URL + query)
             .then((res) => {
                 if (/^2/.test(res.status)) {
                     return Promise.resolve(res.json());
@@ -12,7 +14,3 @@ class HTTPService {
             });
     }
 }
-
-
-const httpService = new HTTPService();
-export default httpService;

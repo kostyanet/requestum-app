@@ -1,5 +1,5 @@
 .Footer {
-    margin: 15px 0;
+    padding: 15px;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -33,7 +33,7 @@
 }
 
 .contacts__list-item {
-    margin-bottom: 5px;
+    margin-bottom: 12px;
 }
 
 .icon-holder {
@@ -41,12 +41,16 @@
     width: 40px;
 }
 
-.icon-holder.fa {
+.icon-holder .fa {
     color: #ED1111;
 }
 
+.align-self__start {
+    align-self: flex-start;
+}
+
 .email-container {
-    padding-top: 15px;
+    padding-top: 5px;
     line-height: 2;
     margin-bottom: 5px;
 }

@@ -40,7 +40,7 @@ const Footer = () => (
                     Call us now toll free: <a className="anchor__as-text" href="tel:(800) 2345-6789">(800) 2345-6789</a>
                 </li>
                 <li className="flex-row contacts__list-item">
-                    <span className="icon-holder"><i className="fa fa-envelope-o fa-3x" /></span>
+                    <span className="icon-holder align-self__start"><i className="fa fa-envelope-o fa-3x" /></span>
                     <div className="email-container">
                         Customer support: <a className="anchor__as-text" href="mailto:support@example.com">support@example.com</a><br/>
                         Press: <a className="anchor__as-text" href="mailto:pressroom@example.com">pressroom@example.com</a>
