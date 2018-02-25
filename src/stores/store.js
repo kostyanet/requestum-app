@@ -25,7 +25,7 @@ class Store {
     }
 
 
-    getList = () => {
+    getList = action('getList', () => {
         this.isLoading = true;
 
         this._getChunk()
@@ -40,7 +40,7 @@ class Store {
                 this.loadMore();
             }))
             .catch(this._onError);
-    };
+    });
 
 
     _getChunk() { return this.httpService.get(`inventory?page=${++this._pageNum}&per_page=${AppSettings.PAGE_LEN}`); };
@@ -74,10 +74,10 @@ class Store {
     });
 
 
-    _onError = action.bound( err => console.error(`HTTPService Error: ${err.message}`) );
+    _onError = err => console.error(`HTTPService Error: ${err.message}`);
 
 
-    _fillBuffer = (arr) => this._buffer = this._setItemId(arr);
+    _fillBuffer = arr => this._buffer = this._setItemId(arr);
 
 
     _setItemId(arr) {
